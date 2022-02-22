@@ -2,7 +2,9 @@
 
 export PYTHONPATH="TabularSemanticParsing:$PYTHONPATH"
 
-source "TabularSemanticParsing/configs/bridge/spider-bridge-bert-large.sh"
+source TabularSemanticParsing/configs/bridge/spider-bridge-bert-large.sh
+source bodi-nlp-server-venv/bin/activate
+
 gpu="0"
 checkpoint_path="TabularSemanticParsing/model/bridge-spider-bert-large-ems-70-1-exe-68-2.tar"
 csv_dir="../Bot/src/main/resources"

@@ -5,14 +5,13 @@ natural language questions.
 
 from flask import Flask, request
 from io import StringIO
+from TabularSemanticParsing.src.parse_args import args
 import configparser
-
 import text_to_table
 import ca_es_to_en
 
 ROOT_SECTION = 'root'
-CONFIG_FILE_PATH = '../Bot/src/main/resources/bot.properties'
-
+CONFIG_FILE_PATH = args.csv_dir + '/bot.properties'
 
 def loadConfig():
     ini_str = '[' + ROOT_SECTION + ']\n' + open(CONFIG_FILE_PATH, 'r').read()
