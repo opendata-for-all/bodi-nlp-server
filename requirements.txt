@@ -4,9 +4,10 @@ pandas
 
 # TabularSemanticParsing requirements
 
+freetype-py
+pypng
 torch
 sentencepiece
-
 revtok==0.0.3
 tqdm==4.27
 torchvision==0.2.1
@@ -14,7 +15,7 @@ mo-future>=2.20
 pyparsing==2.3.0
 wandb==0.8.30
 n2w
-matplotlib==3.0.2
+matplotlib
 asciitree
 apex
 nltk==3.4.5
