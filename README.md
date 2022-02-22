@@ -11,7 +11,7 @@ These are the current provided functionalities:
   English to SQL statements. So, when the input is not in English, a translation to English must be performed.
   Currently, supported languages are Spanish, Catalan and English.
 
-### Deploy the server
+## Quick start
 
 Before deploying the server, you may want to edit some variables for your purpose.
 
@@ -30,6 +30,16 @@ Before deploying the server, you may want to edit some variables for your purpos
   - **SERVER_URL**: the URL where the server is deployed
   - **TEXT_TO_TABLE_ENDPOINT**: the endpoint of the server used to make requests to query the database with natural 
     language sentences
+
+### Install and run
+
+To install all the components:
+
+```
+./install_server.sh
+```
+
+And then, to deploy the server:
 
 ```
 ./run_server.sh
