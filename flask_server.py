@@ -24,7 +24,7 @@ def loadConfig():
 config = loadConfig()
 app = Flask(__name__)
 app.config['SERVER_NAME'] = config.get(ROOT_SECTION, 'SERVER_URL')
-text_to_table.setup(config.get(ROOT_SECTION, 'xls.importer.xls')[:-4], config.get(ROOT_SECTION, 'csv.delimiter').encode().decode('unicode_escape'))
+text_to_table.setup(config.get(ROOT_SECTION, 'xls.importer.xls'), config.get(ROOT_SECTION, 'csv.delimiter').encode().decode('unicode_escape'))
 ca_es_to_en.setup()
 
 
